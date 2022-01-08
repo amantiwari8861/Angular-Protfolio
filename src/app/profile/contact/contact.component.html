@@ -1,39 +1,39 @@
-<fiv class="section" id="contact">
-    <fiv class="cc-contact-information" style="background-image: url('assets/images/contact.jpg');">
-      <fiv class="container">
-        <fiv class="cc-contact">
-          <fiv class="row">
-            <fiv class="col-md-9">
-              <fiv class="card mb-0" data-aos="zoom-in">
-                <fiv class="h4 text-center title">Contact Me</DIV>
-                <fiv class="row">
-                  <fiv class="col-md-6">
-                    <fiv class="card-body">
+<DIV class="section" id="contact">
+    <DIV class="cc-contact-information" style="background-image: url('assets/images/contact.jpg');">
+      <DIV class="container">
+        <DIV class="cc-contact">
+          <DIV class="row">
+            <DIV class="col-md-9">
+              <DIV class="card mb-0" data-aos="zoom-in">
+                <DIV class="h4 text-center title">Contact Me</DIV>
+                <DIV class="row">
+                  <DIV class="col-md-6">
+                    <DIV class="card-body">
                       <form name="form" (ngSubmit)="f.form.valid ; f.resetForm()" #f="ngForm" novalidate>
-                        <fiv class="p pb-3">
+                        <DIV class="p pb-3">
                           <strong>Feel free to contact me </strong>
                         </DIV>
-                        <fiv class="row mb-3">
-                          <fiv class="col">
-                            <fiv class="input-group">
+                        <DIV class="row mb-3">
+                          <DIV class="col">
+                            <DIV class="input-group">
                               <input class="form-control" type="text" name="name" #name placeholder="Name"
                                 [(ngModel)]="model.name" #name="ngModel"
                                 [ngClass]="{ 'is-invalid': f.submitted && name.invalid }" required />
                             </DIV>
                           </DIV>
                         </DIV>
-                        <fiv class="row mb-3">
-                          <fiv class="col">
-                            <fiv class="input-container">
+                        <DIV class="row mb-3">
+                          <DIV class="col">
+                            <DIV class="input-container">
                               <input class="form-control" type="text" name="subject" #subject placeholder="Subject"
                                 [(ngModel)]="model.subject" #subject="ngModel"
                                 [ngClass]="{ 'is-invalid': f.submitted && subject.invalid }" required />
                             </DIV>
                           </DIV>
                         </DIV>
-                        <fiv class="row mb-3">
-                          <fiv class="col">
-                            <fiv class="input-group">
+                        <DIV class="row mb-3">
+                          <DIV class="col">
+                            <DIV class="input-group">
                               <input class="form-control" type="text" name="email"  #email placeholder="E-mail"
                                 [(ngModel)]="model.email" #email="ngModel"
                                 [ngClass]="{ 'is-invalid': f.submitted && email.invalid }"
@@ -41,25 +41,25 @@
                             </DIV>
                           </DIV>
                         </DIV>
-                        <fiv class="row mb-3">
-                          <fiv class="col">
-                            <fiv class="form-group">
+                        <DIV class="row mb-3">
+                          <DIV class="col">
+                            <DIV class="form-group">
                               <textarea class="form-control" name="message" #message placeholder="Your Message"
                                 [(ngModel)]="model.message" #message="ngModel"
                                 [ngClass]="{ 'is-invalid': f.submitted && message.invalid }" required></textarea>
                             </DIV>
                           </DIV>
                         </DIV>
-                        <fiv class="row">
-                          <fiv class="col">
+                        <DIV class="row">
+                          <DIV class="col">
                             <button class="btn btn-primary" type="submit" (click)="onSubmit(name.value, subject.value, email.value, message.value)"> Send</button>
                           </DIV>
                         </DIV>
                       </form>
                     </DIV>
                   </DIV>
-                  <fiv class="col-md-6">
-                    <fiv class="card-body">
+                  <DIV class="col-md-6">
+                    <DIV class="card-body">
                         <p class="mb-0">
                             <strong>Phone</strong>
                         </p>
